@@ -52,10 +52,18 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
+<<<<<<< HEAD
 add_service_files(
   FILES
   AddTwoInts.srv
  )
+=======
+# add_service_files(
+#   FILES
+#   Service1.srv
+#   Service2.srv
+# )
+>>>>>>> ad1a56ce8cc86440938679f3513a1d35094a1f3b
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -65,10 +73,17 @@ add_service_files(
 # )
 
 ## Generate added messages and services with any dependencies listed here
+<<<<<<< HEAD
 generate_messages(
    DEPENDENCIES
    std_msgs
  )
+=======
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs
+# )
+>>>>>>> ad1a56ce8cc86440938679f3513a1d35094a1f3b
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
