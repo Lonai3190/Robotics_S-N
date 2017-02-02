@@ -26,7 +26,8 @@ while true
            end
            
     end
-   
+   catch err   
+         break;
  end
 end
 figure

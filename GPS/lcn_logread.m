@@ -1,6 +1,6 @@
 
 clear all;
-log_file = lcm.logging.Log('/home/lonai/Downloads/lcm-1.2.1/GPS/log/lcm-log-2017-02-01-02:28:26', 'r');
+log_file = lcm.logging.Log('/home/lonai/Downloads/lcm-1.2.1/GPS/log/lcm-log-2017-02-01-02:42:32', 'r');
 %import gps_t.*
 while true
  try
@@ -26,7 +26,8 @@ while true
            end
            
     end
-   
+   catch err  
+         break;
  end
 end
 figure
