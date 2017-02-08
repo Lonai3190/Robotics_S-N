@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-<<<<<<< HEAD
-project(learning_tf)
-=======
 project(beginner_tutorials)
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -11,13 +7,8 @@ project(beginner_tutorials)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
-<<<<<<< HEAD
-  tf
-  turtlesim
-=======
   std_msgs
   message_generation
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 )
 
 ## System dependencies are found with CMake's conventions
@@ -61,24 +52,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 add_service_files(
   FILES
   AddTwoInts.srv
  )
-=======
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
-<<<<<<< HEAD
-=======
->>>>>>> ad1a56ce8cc86440938679f3513a1d35094a1f3b
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -88,24 +65,10 @@ add_service_files(
 # )
 
 ## Generate added messages and services with any dependencies listed here
-<<<<<<< HEAD
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
-=======
-<<<<<<< HEAD
-generate_messages(
-   DEPENDENCIES
-   std_msgs
- )
-=======
 # generate_messages(
 #   DEPENDENCIES
 #   std_msgs
 # )
->>>>>>> ad1a56ce8cc86440938679f3513a1d35094a1f3b
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -138,13 +101,8 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-<<<<<<< HEAD
-#  LIBRARIES learning_tf
-#  CATKIN_DEPENDS roscpp rospy tf turtlesim
-=======
 #  LIBRARIES beginner_tutorials
 #  CATKIN_DEPENDS roscpp rospy std_msgs
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 #  DEPENDS system_lib
 )
 
@@ -160,31 +118,13 @@ include_directories(
 )
 
 ## Declare a C++ library
-<<<<<<< HEAD
-# add_library(learning_tf
-#   src/${PROJECT_NAME}/learning_tf.cpp
-=======
 # add_library(beginner_tutorials
 #   src/${PROJECT_NAME}/beginner_tutorials.cpp
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 # )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
-<<<<<<< HEAD
-# add_dependencies(learning_tf ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
-## Declare a C++ executable
-# add_executable(learning_tf_node src/learning_tf_node.cpp)
-
-## Add cmake target dependencies of the executable
-## same as for the library above
-# add_dependencies(learning_tf_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
-## Specify libraries to link a library or executable target against
-# target_link_libraries(learning_tf_node
-=======
 # add_dependencies(beginner_tutorials ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
@@ -196,7 +136,6 @@ include_directories(
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(beginner_tutorials_node
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 #   ${catkin_LIBRARIES}
 # )
 
@@ -215,11 +154,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-<<<<<<< HEAD
-# install(TARGETS learning_tf learning_tf_node
-=======
 # install(TARGETS beginner_tutorials beginner_tutorials_node
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -244,11 +179,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-<<<<<<< HEAD
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_learning_tf.cpp)
-=======
 # catkin_add_gtest(${PROJECT_NAME}-test test/test_beginner_tutorials.cpp)
->>>>>>> efc834b747f29584b66628f7cbc41a1503cc6687
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

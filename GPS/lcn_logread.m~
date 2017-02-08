@@ -1,0 +1,32 @@
+
+clear all;
+log_file = lcm.logging.Log('/home/lonai/Downloads/lcm-1.2.1/GPS/log/lcm-log-2017-02-01-02:28:26', 'r');
+%import gps_t.*
+while true
+ try
+    for i=1:1000 
+           GPS = log_file.readNext(); 
+
+           % channel name is in GPS.channel
+           
+
+           if strcmp(GPS.channel, 'GPS')
+            % builds the  GPS object from data in this record
+              self.packet = gps_trans.direction(GPS.data);
+              time(i)=self.packet.timestamp;
+              if(utm_east(i)==0 || utm_north(i)==0)
+              utm_east(i)=self.packet.utm_x;
+              utm_north(i)=self.packet.utm_y;
+              if(utm_east(i)==0 || utm_north(i)==0)
+                  utm_east(i)=utm_east(i-1);
+                  utm_north(i)=utm_north(i-1);
+           end
+           
+    end
+   catch err   % exception will be thrown when you hit end of file
+         break;
+   
+ end
+end
+figure
+plot(utm_east,utm_north,'x')
