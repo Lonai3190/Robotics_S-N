@@ -1,0 +1,17 @@
+package gps_trans;
+
+struct imud
+{
+    double   ya;
+    double   pit;
+    double   rol; 
+    double   magx;
+    double   magy;
+    double   magz;
+    double   accx;
+    double   accy;
+    double   accz;
+    double   gyrox_radps;
+    double   gyroy_radps;
+    double   gyroz_radps;
+}

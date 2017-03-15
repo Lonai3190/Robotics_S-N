@@ -1,0 +1,18 @@
+package exlcm;
+
+struct imu
+{
+    float yaw;
+    float pitch;
+    float roll;
+    float magx;
+    float magy;
+    float magz;
+    float accelx;
+    float accely;
+    float accelz;
+    float gyrox;
+    float gyroy;
+    float gyroz;
+    float mtime;
+}

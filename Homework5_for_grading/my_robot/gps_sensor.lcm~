@@ -1,0 +1,13 @@
+package gps_trans;
+
+struct direction
+{
+    int64_t  timestamp;
+    double   latitude;
+    string   direction1;
+    double   longitude; 
+    string   direction2;
+    int32_t  altitude;
+    double   utm_x;
+    double   utm_y;
+}

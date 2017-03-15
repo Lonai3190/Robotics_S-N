@@ -1,0 +1,16 @@
+avgx=mag_x(1,10216:13216)
+avgy=mag_y(1,10216:13216)
+
+ellipse=fit_ellipse(avgx,avgy);
+
+R=[ cos(ellipse.phi) sin(ellipse.phi);
+    -sin(ellipse.phi) cos(ellipse.phi)];
+magz=[ellipse.X0_in-avgx;ellipse.Y0_in-avg];
+v=R*magz;
+mag_x=v(1,:);
+mag_y=v(2,:);
+
+figure
+plot(mag_x,mag_y)
+
+
